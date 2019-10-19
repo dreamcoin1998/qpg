@@ -11,7 +11,7 @@ from utils.Emails import token_confirm
 from django.shortcuts import render
 import re
 from django.db.utils import IntegrityError
-from .tasks import random_str
+from .tasks import random_str, send_register_email
 
 
 @csrf_exempt
@@ -66,18 +66,37 @@ def yonghu_create(request):
             print(get_user_model().objects.filter(username=username))
         if len(get_user_model().objects.filter(username=username)) == 0:
             try:
-                user = get_user_model().objects.create(
+                get_user_model().objects.create(
                     username = username,
                     phone = phone,
                     email = email,
                     password = make_password(password),
                     nickname = random_str() ### 创建随机昵称
                 )
-                return Response({'msg': '注册成功', 'code': '0'}, status=status.HTTP_200_OK)
+                token = token_confirm.generate_validate_token(username)
+                send_register_email.delay(email=email,username=username,token=token,send_type="register")
+                return Response({'msg': '注册成功，', 'code': '0'}, status=status.HTTP_200_OK)
             except IntegrityError as e:
                 print(e)
                 return Response({'msg': '注册失败,请重新注册', 'code': '7'}, status=status.HTTP_400_BAD_REQUEST)
         return Response({'msg': '账号已存在', 'code': '6'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+@csrf_exempt
+
+
+
+@csrf_exempt
+@api_view(['GET'])
+def email_test(request):
+    '''
+    邮箱验证测试
+    :param request:
+    :return:
+    '''
+    user = get_user_model().objects.get(username='15259695263')
+    send_register_email.delay(email=user.email, username=user.username, token=token_confirm.generate_validate_token(user.username), send_type="register")
+    return Response({'msg': 'success.'}, status=status.HTTP_200_OK)
 
 
 @csrf_exempt
@@ -101,17 +120,18 @@ def change_nickname(request):
 
 @csrf_exempt
 @api_view(['GET'])
-def active_email(request, token):
+def active_email(request):
     '''
     通过邮箱激活验证
     :param request:
     :return:
     '''
+    token = request.query_params.get('token')
     try:
-        nickname = token_confirm.confirm_validate_token(token) # 将用户名解析出来
+        username = token_confirm.confirm_validate_token(token) # 将用户名解析出来
     except Exception:
-        nickname = token_confirm.remove_validate_token(token) # 过期，则将用户名解析出来
-        users = get_user_model().objects.filter(username=nickname)
+        username = token_confirm.remove_validate_token(token) # 过期，则将用户名解析出来
+        users = get_user_model().objects.filter(username=username)
         for user in users:
             # 验证过期
             if user.is_active == False:
@@ -122,7 +142,9 @@ def active_email(request, token):
             else:
                 return Response('已经验证过')
     try:
-        user = get_user_model().objects.get(username=nickname)
+        user = get_user_model().objects.get(username=username)
+        if user.is_active == True:
+            return Response('已经验证过')
     except Exception as e:
         print(e)
         return Response('您验证过的用户不存在!')

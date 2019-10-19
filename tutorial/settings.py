@@ -130,15 +130,15 @@ USE_L10N = True
 
 USE_TZ = True
 
-DOMAIN = 'https://ys.gaoblog.cn' #用户验证邮箱访问地址
+DOMAIN = 'http://127.0.0.1:3389/auth' #用户验证邮箱访问地址
 # 设置邮件域名
-EMAIL_HOST = "gaoblog.cn"
+EMAIL_HOST = "smtp.exmail.qq.com"
 # 设置端口号
 EMAIL_PORT = 465
 # 发件人邮箱
 EMAIL_HOST_USER = 'gaojunbin@gaoblog.cn'
 # 发件人姓名
-EMAIL_WEBITE_NAME = '晓晓'
+EMAIL_WEBITE_NAME = '超级管理员'
 # 发件人授权码
 EMAIL_HOST_PASSWORD = 'xfYC4mkT2QLPuBQv'
 # 设置是否启用安全链接
@@ -162,7 +162,7 @@ HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 # celery回去查看INSTALLD_APP下查看每个app下面的目录中的tasks.py文件，找到标记为task的方法，将它们注册为celery task
 djcelery.setup_loader()
 # broker的代理地址
-BROKER_URL = 'redis://127.0.0.1:6379/0'
+BROKER_URL = 'redis://127.0.0.1:6379/6'
 #celery结果返回，可用于跟踪结果
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 # tasks.py文件所在位置

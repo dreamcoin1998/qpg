@@ -51,7 +51,7 @@ def send_register_email(email,username=None,token=None,send_type='register'):
     if send_type =='register':
         email_title = '注册用户验证信息'
         email_body = "\n".join(['{0},欢迎'.format(username), '注册，请访问该链接，完成用户验证,该链接1个小时内有效',
-                                 '/'.join([settings.DOMAIN, 'activate', token])])
+                                 '/'.join([settings.DOMAIN, 'activate?token=' + token])])
         print('========发送邮件中')
         send_stutas = send_mail(email_title, email_body, settings.EMAIL_HOST_USER, [email])
         print(send_stutas)
