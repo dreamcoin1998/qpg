@@ -44,10 +44,11 @@ class User(AbstractUser):
     def __str__(self):
         return self.nickname
 
-    # 创建昵称
-    def change_nickname(self, nickname):
+    # 修改昵称和个人介绍
+    def change_info(self, nickname, info):
         try:
             self.nickname = nickname
+            self.info = info
             self.save()
             return True
         except IntegrityError as e:

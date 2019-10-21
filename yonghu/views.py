@@ -12,6 +12,75 @@ from django.shortcuts import render
 import re
 from django.db.utils import IntegrityError
 from .tasks import random_str, send_register_email
+from rest_framework import viewsets, mixins
+from rest_framework.permissions import IsAuthenticated
+from utils.permissions import IsOwnerOrReadOnlyInfo
+from django.contrib.auth import authenticate, login
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.authentication import SessionAuthentication
+from rest_framework.decorators import action
+from rest_framework.authentication import SessionAuthentication
+
+
+class CsrfExemptSessionAuthentication(SessionAuthentication):
+    '''
+    禁用跨域
+    '''
+    def enforce_csrf(self, request):
+        return  # To not perform the csrf check previously happening
+
+
+class YonghuInfo(mixins.UpdateModelMixin, viewsets.ReadOnlyModelViewSet):
+    '''
+    获取或更新用户信息
+    list: http://hostname/auth/yonghu_info/[pk] GET # pk不带获取当前用户，带的话获取指定用户
+    update: http://hostname/auth/yonghu_info/pk/ PUT # pk必须带
+    '''
+    queryset = get_user_model().objects.all()
+    lookup_field = 'pk'
+    serializer_class = UserSerializer
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnlyInfo)
+    authentication_classes = [JSONWebTokenAuthentication, CsrfExemptSessionAuthentication]
+
+    def get_queryset(self):
+        print(self.kwargs.get('pk'))
+        if self.kwargs.get('pk'):
+            pk = int(self.kwargs['pk'])
+        else:
+            pk = self.request.user.id
+        return get_user_model().objects.filter(pk=pk)
+
+    def update(self, request, *args, **kwargs):
+        user = self.get_object()
+        if user.is_active:
+            nickname = request.data.get('nickname')
+            info = request.data.get('info')
+            if user.change_info(nickname, info):
+                return Response({'msg': '修改成功', 'code': '0'}, status=status.HTTP_200_OK)
+            else:
+                return Response({'msg': '昵称已存在', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            return Response({'msg': '账号未激活，请激活后再试。', 'code': '2'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+@csrf_exempt
+@api_view(['POST'])
+def yonghu_login(request):
+    '''
+    用户登录
+    :param request:
+    :return:
+    '''
+    from .urls import urlpatterns
+    print(urlpatterns)
+    username = request.data.get('username')
+    password = request.data.get('password')
+    user = authenticate(username=username, password=password)
+    if user is not None:
+        login(request, user)
+        return Response({'msg': '登陆成功', 'code': '0'}, status=status.HTTP_200_OK)
+    else:
+        return Response({'msg': '用户名或密码错误', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
 
 
 @csrf_exempt
@@ -28,6 +97,7 @@ def Yonghu_info(request):
 
     # 获取用户信息
     if request.method == 'GET':
+        print(request.session.get('userID'))
         serializer = UserSerializer(yonghu)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -83,10 +153,6 @@ def yonghu_create(request):
 
 
 @csrf_exempt
-
-
-
-@csrf_exempt
 @api_view(['GET'])
 def email_test(request):
     '''
@@ -97,25 +163,6 @@ def email_test(request):
     user = get_user_model().objects.get(username='15259695263')
     send_register_email.delay(email=user.email, username=user.username, token=token_confirm.generate_validate_token(user.username), send_type="register")
     return Response({'msg': 'success.'}, status=status.HTTP_200_OK)
-
-
-@csrf_exempt
-@api_view(['POST'])
-def change_nickname(request):
-    '''
-    改昵称
-    :param request:
-    :return:
-    '''
-    username = request.data.get('username')
-    nickname = request.data.get('nickname')
-    user = get_user_model().objects.filter(username=username)
-    if len(user) == 0:
-        return Response({'msg': '用户不存在', 'code': '1'}, status=status.HTTP_404_NOT_FOUNDT)
-    if user[0].change_nickname(nickname):
-        return Response({'msg': '修改昵称成功', 'code': '0'}, status=status.HTTP_200_OK)
-    else:
-        return Response({'msg': '昵称已存在', 'code': '2'}, status=status.HTTP_400_BAD_REQUEST)
 
 
 @csrf_exempt
