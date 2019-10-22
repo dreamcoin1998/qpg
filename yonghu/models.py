@@ -15,11 +15,12 @@ class VerifyCode(models.Model):
     send_choices = (
         ('register', '注册'),
         ('forget', '找回密码'),
-        ('update_email', '修改邮箱')
+        ('update_email', '修改邮箱'),
+        ('email_login', '邮箱登录')
     )
     send_type = models.CharField(verbose_name='验证码类型', max_length=30, choices=send_choices, default='register')
 
-    send_time = models.DateTimeField(default=datetime.now, verbose_name='发送时间')
+    send_time = models.DateTimeField(auto_now=True, verbose_name='发送时间')
 
     def __str__(self):
         return self.code

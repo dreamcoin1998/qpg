@@ -7,12 +7,12 @@ from .serializers import UserSerializer
 from django.contrib.auth.hashers import make_password
 from rest_framework import generics
 from django.contrib.auth import get_user_model
-from utils.Emails import token_confirm
+from utils.token import token_confirm
 from django.shortcuts import render
 import re
 from django.db.utils import IntegrityError
 from .tasks import random_str, send_register_email
-from rest_framework import viewsets, mixins
+from rest_framework import viewsets, mixins, generics
 from rest_framework.permissions import IsAuthenticated
 from utils.permissions import IsOwnerOrReadOnlyInfo
 from django.contrib.auth import authenticate, login
@@ -20,6 +20,8 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.decorators import action
 from rest_framework.authentication import SessionAuthentication
+from .models import VerifyCode
+from datetime import datetime
 
 
 class CsrfExemptSessionAuthentication(SessionAuthentication):
@@ -67,12 +69,10 @@ class YonghuInfo(mixins.UpdateModelMixin, viewsets.ReadOnlyModelViewSet):
 @api_view(['POST'])
 def yonghu_login(request):
     '''
-    用户登录
+    用户账号登录
     :param request:
     :return:
     '''
-    from .urls import urlpatterns
-    print(urlpatterns)
     username = request.data.get('username')
     password = request.data.get('password')
     user = authenticate(username=username, password=password)
@@ -81,6 +81,108 @@ def yonghu_login(request):
         return Response({'msg': '登陆成功', 'code': '0'}, status=status.HTTP_200_OK)
     else:
         return Response({'msg': '用户名或密码错误', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+@csrf_exempt
+@api_view(['POST'])
+def email_code(request):
+    '''
+    邮箱登录验证码
+    :param request:
+    :return:
+    '''
+    email = request.data.get('email')
+    send_type = request.data.get('send_type')
+    if not get_user_model().objects.filter(email=email):
+        return Response({'msg': '当前邮箱未关联用户', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
+    send_register_email.delay(email, send_type=send_type)
+    return Response({'msg': '验证码发送成功', 'code': '0'}, status=status.HTTP_200_OK)
+
+
+@csrf_exempt
+@api_view(['POST'])
+def email_login(request):
+    '''
+    邮箱登录
+    :param request:
+    :return:
+    '''
+    email = request.data.get('email')
+    code = request.data.get('code')
+    if not get_user_model().objects.filter(email=email):
+        return Response({'msg': '当前邮箱未关联用户', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
+    verifycode = VerifyCode.objects.filter(email=email, code=code, send_type='email_login')
+    if verifycode:
+        dt = verifycode[0].send_time
+        if is_overdue(dt):
+            user = get_user_model().objects.get(email=email)
+            login(request, user)
+            return Response({'msg': '登陆成功', 'code': '0'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'msg': '验证码超时', 'code': '2'}, status=status.HTTP_400_BAD_REQUEST)
+    else:
+        return Response({'msg': '验证码错误', 'code': '3'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UpdataPassword(mixins.UpdateModelMixin, viewsets.GenericViewSet):
+    '''
+    更改密码
+    '''
+    lookup_field = 'pk'
+    serializer_class = UserSerializer
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnlyInfo)
+    authentication_classes = [JSONWebTokenAuthentication, CsrfExemptSessionAuthentication]
+    def get_queryset(self):
+        return get_user_model().objects.filter(pk=self.request.user.id)
+
+    def update(self, request, *args, **kwargs):
+        user = self.get_object()
+        old_passwd = request.data.get('old_passwd')
+        new_passwd = request.data.get('new_passwd')
+        if user.check_password(old_passwd):
+            user.password = make_password(new_passwd)
+            user.save()
+            return Response({'msg': '密码修改成功', 'code': '0'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'msg': '密码错误', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class FindPasswordByEmail(generics.UpdateAPIView):
+    '''
+    通过验证邮箱重置密码
+    '''
+    queryset = get_user_model().objects.all()
+    serializer_class = UserSerializer
+
+    @action(methods=['PUT', 'POST'], detail=False)
+    def update(self, request, *args, **kwargs):
+        email = request.data.get('email')
+        code = request.data.get('code')
+        new_passwd = request.data.get('new_passwd')
+        user = get_user_model().objects.filter(email=email)
+        if not user:
+            return Response({'msg': '当前邮箱未关联用户', 'code': '1'}, status=status.HTTP_400_BAD_REQUEST)
+        verifycode = VerifyCode.objects.filter(email=email, code=code, send_type='forget')
+        if verifycode:
+            dt = verifycode[0].send_time
+            if is_overdue(dt):
+                user[0].set_password(new_passwd)
+                user[0].save()
+                return Response({'msg': '密码重置成功', 'code': '0'}, status=status.HTTP_200_OK)
+            else:
+                return Response({'msg': '验证码超时', 'code': '2'}, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            return Response({'msg': '验证码错误', 'code': '3'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+def is_overdue(time):
+    '''
+    检查验证码是否过期
+    :param time:
+    :return:
+    '''
+    deltertime = int(datetime.now().timestamp()) - int(time.timestamp())
+    return deltertime <= 300
 
 
 @csrf_exempt

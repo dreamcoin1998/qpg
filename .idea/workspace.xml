@@ -2,140 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e7fb9ef-bd5c-4f1c-b17a-515f9d6c3ea4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/permissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/djangorestframework-3.10.2.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/djangorestframework-3.10.2.dist-info/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/djangorestframework-3.10.2.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/djangorestframework-3.10.2.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/djangorestframework-3.10.2.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/djangorestframework-3.10.2.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authentication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/management/commands/drf_create_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/management/commands/drf_create_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/migrations/0002_auto_20160226_1747.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/migrations/0002_auto_20160226_1747.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authtoken/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/documentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/documentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/fields.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/generics.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/generics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ach/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ach/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ar/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ar/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/be/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/be/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ca/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ca/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ca_ES/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ca_ES/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/cs/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/cs/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/da/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/da/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/de/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/el/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/el_GR/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/el_GR/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en_AU/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en_AU/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en_CA/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en_CA/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en_US/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/en_US/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/es/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/es/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/et/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/et/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fa/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fa/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fa_IR/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fa_IR/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fi/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fi/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fr_CA/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/fr_CA/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/gl/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/gl/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/gl_ES/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/gl_ES/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/he_IL/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/he_IL/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/hu/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/hu/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/id/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/id/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/it/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/it/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ja/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ja/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ko_KR/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ko_KR/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/lv/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/lv/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/mk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/mk/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/nb/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/nb/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/nl/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/nl/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/nn/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/nn/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/no/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/no/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pl/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pt/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pt/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pt_BR/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pt_BR/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pt_PT/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/pt_PT/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ro/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ro/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/ru/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/sk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/sk/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/sl/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/sl/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/sv/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/sv/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/tr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/tr/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/tr_TR/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/tr_TR/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/uk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/vi/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/vi/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_CN/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_CN/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_Hans/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_Hant/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_Hant/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_TW/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/locale/zh_TW/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/management/commands/generateschema.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/management/commands/generateschema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/metadata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/mixins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/negotiation.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/negotiation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/pagination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/parsers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/permissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/relations.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/relations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/renderers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/renderers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/reverse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/routers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/coreapi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/inspectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/inspectors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/openapi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/schemas/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/docs/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/docs/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/docs/css/jquery.json-view.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/docs/js/jquery.json-view.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/js/csrf.js" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/js/csrf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/static/rest_framework/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/auth/session.html" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/auth/session.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/langs/shell.html" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templates/rest_framework/docs/langs/shell.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/throttling.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/throttling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/urlpatterns.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/urlpatterns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/breadcrumbs.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/breadcrumbs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/encoders.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/encoders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/field_mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/field_mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/formatting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/mediatypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/mediatypes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/representation.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/representation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/utils/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/versioning.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/versioning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/viewsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Emails.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yonghu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/yonghu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yonghu/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/yonghu/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yonghu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yonghu/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yonghu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/yonghu/views.py" afterDir="false" />
     </list>
@@ -165,10 +34,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youshengshu/models.py">
+        <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="309">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
+              <folding>
+                <element signature="e#309#318#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yonghu/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+            <state relative-caret-position="198">
+              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -188,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yonghu/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="614">
+              <caret line="259" column="7" lean-forward="true" selection-start-line="259" selection-start-column="7" selection-end-line="259" selection-end-column="7" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -198,46 +70,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/viewsets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="200" column="49" lean-forward="true" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/generics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-926">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="216">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/views.py">
+        <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/shortcuts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/mixins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/permissions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="62">
+              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -245,10 +90,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yonghu/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="450">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yonghu/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/token.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yonghu/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -294,11 +175,11 @@
         <option value="$PROJECT_DIR$/youshengshu/models.py" />
         <option value="$PROJECT_DIR$/yonghu/admin.py" />
         <option value="$PROJECT_DIR$/yonghu/serializers.py" />
-        <option value="$PROJECT_DIR$/yonghu/tasks.py" />
+        <option value="$PROJECT_DIR$/utils/permissions.py" />
         <option value="$PROJECT_DIR$/tutorial/settings.py" />
         <option value="$PROJECT_DIR$/yonghu/models.py" />
+        <option value="$PROJECT_DIR$/yonghu/tasks.py" />
         <option value="$PROJECT_DIR$/yonghu/urls.py" />
-        <option value="$PROJECT_DIR$/utils/permissions.py" />
         <option value="$PROJECT_DIR$/yonghu/views.py" />
       </list>
     </option>
@@ -442,12 +323,12 @@
       <workItem from="1567254528068" duration="8010000" />
       <workItem from="1567411004489" duration="6128000" />
       <workItem from="1567498822775" duration="18000" />
-      <workItem from="1570781987211" duration="98417000" />
+      <workItem from="1570781987211" duration="109024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112573000" />
+    <option name="totallyTimeSpent" value="123180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,7 +347,7 @@
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.11395101" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49946752" visible="true" weight="0.38339022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49946752" visible="true" weight="0.20022753" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005325" side_tool="true" weight="0.32964602" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32992035" />
@@ -492,22 +373,6 @@
     <SUITE FILE_PATH="coverage/tutorial$delete.coverage" NAME="delete Coverage Results" MODIFIED="1570960697957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yonghu" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tutorial/quickstart/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/406e225c-436f-49d7-a8bc-5116daf23b0f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial/quickstart/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/snippets/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -645,16 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yonghu/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/middleware/common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
@@ -700,37 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yonghu/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/Emails.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-190">
           <caret line="398" column="6" selection-start-line="398" selection-start-column="6" selection-end-line="398" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1402">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -758,16 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="e#309#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youshengshu/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -775,37 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yonghu/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yonghu/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/authentication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-207">
           <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -823,31 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="200" column="49" lean-forward="true" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-926">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="364" column="8" selection-start-line="364" selection-start-column="8" selection-end-line="364" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -858,10 +628,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/core/mail/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="290" column="47" selection-start-line="290" selection-start-column="47" selection-end-line="290" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/core/mail/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="393" column="8" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="e#309#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yonghu/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yonghu/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yonghu/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/token.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yonghu/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yonghu/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="614">
+          <caret line="259" column="7" lean-forward="true" selection-start-line="259" selection-start-column="7" selection-end-line="259" selection-end-column="7" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
