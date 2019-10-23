@@ -24,5 +24,5 @@ urlpatterns = [
     # url(r'^', include('snippets.url')),
     path('admin/', admin.site.urls),
     url(r'^auth/', include('yonghu.urls')),
-    # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

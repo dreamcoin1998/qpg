@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import djcelery
+import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,6 +65,11 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'tutorial.urls'
 # 自定义用户模型所在的位置
 AUTH_USER_MODEL = 'yonghu.User'
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_ALLOW_REFRESH':True
+}
 
 TEMPLATES = [
     {
@@ -126,9 +132,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         # drf的这一阶段主要是做验证,middleware的auth主要是设置session和user到request对象
         # 默认的验证是按照验证列表从上到下的验证
+        "rest_framework_jwt.authentication.JSONWebTokenAuthentication",
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-        "rest_framework_jwt.authentication.JSONWebTokenAuthentication",
     )
 }
 
@@ -194,25 +200,25 @@ CELERY_FORCE_EXECV = True
 CELERY_ENABLE_UTC = True
 
 # 下面是定时任务的设置，我一共配置了三个定时任务.
-from celery.schedules import crontab
-CELERYBEAT_SCHEDULE = {
-    '每小时获取数据': {
-        "task": "yonghu.tasks.getApi",
-        #"schedule": crontab(minute='*/3',),
-        "schedule": crontab(0,'*','*','*','*'),
-        "args": (),
-    },
-    '每周一进行数据库清理': {
-        'task': 'yonghu.tasks.removeApi',
-        'schedule': crontab(hour='*/9', minute='*/50', day_of_week='*/5'),
-        "args": ()
-    },
-    '每天进行数据库备份': {
-        'task': 'yonghu.tasks.backups',
-        'schedule': crontab(0,1,'*','*','*'),
-        "args": ()
-    },
-}
+# from celery.schedules import crontab
+# CELERYBEAT_SCHEDULE = {
+#     '每小时获取数据': {
+#         "task": "yonghu.tasks.getApi",
+#         #"schedule": crontab(minute='*/3',),
+#         "schedule": crontab(0,'*','*','*','*'),
+#         "args": (),
+#     },
+#     '每周一进行数据库清理': {
+#         'task': 'yonghu.tasks.removeApi',
+#         'schedule': crontab(hour='*/9', minute='*/50', day_of_week='*/5'),
+#         "args": ()
+#     },
+#     '每天进行数据库备份': {
+#         'task': 'yonghu.tasks.backups',
+#         'schedule': crontab(0,1,'*','*','*'),
+#         "args": ()
+#     },
+# }
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
