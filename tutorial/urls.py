@@ -23,6 +23,7 @@ urlpatterns = [
     # url(r'^', include(router.urls)),
     # url(r'^', include('snippets.url')),
     path('admin/', admin.site.urls),
-    url(r'^auth/', include('yonghu.urls')),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('v1/', include('tutorial.version')),
+    # path('^auth/', include('yonghu.urls')),
+    # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
