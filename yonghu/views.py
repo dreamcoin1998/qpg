@@ -7,7 +7,7 @@ from .serializers import UserSerializer
 from django.contrib.auth.hashers import make_password
 from rest_framework import generics
 from django.contrib.auth import get_user_model
-from utils.token import token_confirm
+from utils.EmailCode import token_confirm
 from django.shortcuts import render
 import re
 from django.db.utils import IntegrityError
@@ -17,7 +17,6 @@ from rest_framework.permissions import IsAuthenticated
 from utils.permissions import IsOwnerOrReadOnlyInfo
 from django.contrib.auth import authenticate, login, logout
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
-from rest_framework.authentication import SessionAuthentication
 from rest_framework.decorators import action
 from rest_framework.authentication import SessionAuthentication
 from .models import VerifyCode

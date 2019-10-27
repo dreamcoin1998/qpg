@@ -5,4 +5,5 @@ from django.urls import path
 
 urlpatterns = [
     path('auth/', include('yonghu.urls')),
+    path('book/', include('youshengshu.urls')),
 ]

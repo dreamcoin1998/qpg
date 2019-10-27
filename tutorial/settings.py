@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # 'snippets',
     'yonghu',
     'djcelery',
+    'youshengshu',
 ]
 
 # REST_FRAMEWORK = {
@@ -124,6 +125,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10,
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
     ),
@@ -187,7 +190,7 @@ BROKER_URL = 'redis://127.0.0.1:6379/6'
 #celery结果返回，可用于跟踪结果
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 # tasks.py文件所在位置
-CELERY_IMPORTS = ('yonghu.tasks', )
+CELERY_IMPORTS = ('yonghu.tasks', 'youshengshu.tasks')
 #celery时区设置，使用settings中TIME_ZONE同样的时区
 CELERY_TIMEZONE = TIME_ZONE
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
